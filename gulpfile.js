@@ -55,3 +55,4 @@ function watch() {
 }
 
 exports.default = gulp.series(clean, gulp.parallel(styles, php, images, icons, fonts), watch);
+exports.build = gulp.series(clean, gulp.parallel(styles, php, images, icons, fonts));
