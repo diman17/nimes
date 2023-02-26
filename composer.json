@@ -1,0 +1,16 @@
+{
+  "name": "dmitriy/nimes",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Dzmitry Paulau",
+      "email": "dmitriy.pavlov.17.04@gmail.com"
+    }
+  ],
+  "scripts": {
+    "format": "vendor/bin/php-cs-fixer fix ."
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.14"
+  }
+}
