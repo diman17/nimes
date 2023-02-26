@@ -1,0 +1,139 @@
+.home {
+  .header {
+    justify-content: center;
+  }
+
+  .header__nav-page {
+    position: absolute;
+    top: calc(100% + 50px);
+    left: 100px;
+  }
+
+  .header__nav-user {
+    position: absolute;
+    top: calc(100% + 50px);
+    right: 100px;
+  }
+
+  .nav-page__list,
+  .nav-user__list {
+    flex-direction: column;
+  }
+}
+
+.promo {
+  padding: 0 100px;
+  background-color: $palette-athens-gray;
+}
+
+.promo__wrapper {
+  display: grid;
+  grid-template-areas: "skip collection image social-list";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.promo__collection {
+  grid-area: collection;
+  align-self: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.promo__slogan {
+  margin: 0;
+  font-size: convertPixelsToRem(18);
+  color: $palette-rolling-stone;
+}
+
+.promo__collection-name {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: Anton, sans-serif;
+  font-size: convertPixelsToRem(128);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__collection-link {
+  text-decoration: none;
+}
+
+.promo__image-wrapper {
+  position: relative;
+
+  display: flex;
+  grid-area: image;
+  align-items: center;
+  justify-content: center;
+
+  width: 530px;
+  height: 617px;
+}
+
+.promo__image-wrapper::before,
+.promo__image-wrapper::after {
+  content: "";
+
+  position: absolute;
+
+  width: 232px;
+  height: 176px;
+
+  background-image: url("../assets/images/diagonal.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.promo__image-wrapper::before {
+  top: 0;
+  left: 0;
+}
+
+.promo__image-wrapper::after {
+  right: 0;
+  bottom: 0;
+  transform: scaleY(-1);
+}
+
+.promo__image {
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.promo__social-list {
+  display: flex;
+  grid-area: social-list;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  list-style-type: none;
+}
+
+.social-list__link {
+  font-size: convertPixelsToRem(14);
+  color: inherit;
+  text-decoration: none;
+}
+
+.promo__skip-to-content {
+  display: block;
+  grid-area: skip;
+  align-self: end;
+
+  width: 12px;
+  height: 29px;
+  margin-bottom: 50px;
+
+  background-image: url("../assets/icons/skip.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

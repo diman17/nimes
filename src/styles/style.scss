@@ -1,12 +1,12 @@
-/* base */
-@import "base/normalize";
-@import "base/base";
-@import "base/typography";
-
 /* abstracts */
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/functions";
+
+/* base */
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
 
 /* layout */
 @import "layout/header";

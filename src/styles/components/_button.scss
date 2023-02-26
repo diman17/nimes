@@ -1,9 +1,10 @@
 .button {
+  @include button-reset;
   padding: 1.5rem;
 
-  font-size: 1rem;
+  font-size: convertPixelsToRem(16);
   font-weight: 700;
-  color: #fff;
+  color: $palette-white;
 
-  background-color: #151c22;
+  background-color: $palette-bunker;
 }
