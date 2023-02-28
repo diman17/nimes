@@ -2,14 +2,15 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   padding: 25px 100px;
 }
 
 .header__logo {
   margin: 0;
-  font-size: convertPixelsToRem(24);
+  font-size: convert-pixels-to-rem(24);
   font-weight: 800;
   text-align: center;
 }
@@ -26,7 +27,7 @@
 }
 
 .nav-page__link {
-  font-size: convertPixelsToRem(16);
+  font-size: convert-pixels-to-rem(16);
   color: inherit;
   text-decoration: none;
 }

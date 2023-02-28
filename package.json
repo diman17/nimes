@@ -7,7 +7,7 @@
     "build": "gulp build",
     "watch": "gulp",
     "prettier": "npx prettier --write .",
-    "stylelint": "npx stylelint --fix ./src/styles**/*.scss",
+    "stylelint": "npx stylelint --fix ./src/styles/**/*.scss",
     "prepare": "husky install"
   },
   "repository": {
