@@ -201,3 +201,60 @@
   margin: 0;
   font-weight: 700;
 }
+
+.home__collection {
+  margin-bottom: 130px;
+}
+
+.collection {
+  padding: 0 100px;
+}
+
+.collection__wrapper {
+  display: flex;
+}
+
+.collection__image {
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.collection__inner {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-right: 70px;
+
+  background-image: url("../../assets/images/diagonal.png");
+  background-size: cover;
+
+  transform: scaleY(-1);
+}
+
+.collection__info {
+  width: 100%;
+  padding: 70px;
+  transform: scaleY(-1);
+
+  background-color: $palette-athens-gray;
+}
+
+.collection__description {
+  font-size: convertPixelsToRem(18);
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+  color: $palette-rolling-stone;
+}
+
+.collection__date {
+  font-size: convertPixelsToRem(32);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.collection__link {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-decoration: none;
+}

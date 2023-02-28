@@ -44,6 +44,7 @@
   </header>
   <main class="home__main">
     <section class="home__promo promo">
+      <h2 class="visually-hidden">Promo</h2>
       <div class="promo__wrapper">
         <div class="promo__collection">
           <p class="promo__slogan">The quality you deserve</p>
@@ -82,6 +83,25 @@
           </li>
         <?php endforeach ?>
       </ul>
+    </section>
+    <section class="home__collection collection">
+      <h2 class="visually-hidden">Collection Fall 2019</h2>
+      <div class="collection__wrapper">
+        <img
+          class="collection__image"
+          src="./assets/images/84df9ce10cda30abc4520d25f9c09aae.jpeg"
+          alt="street fashion collection"
+          width="700"
+          height="370"
+        >
+        <div class="collection__inner">
+          <div class="collection__info">
+            <p class="collection__description">Street fashion collection</p>
+            <p class="collection__date">Fall 2019</p>
+            <a class="collection__link button" href="#">Shop now</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
