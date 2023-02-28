@@ -4,3 +4,4 @@
 npm run stylelint
 npm run prettier
 composer format
+git add .

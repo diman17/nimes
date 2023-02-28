@@ -1,5 +1,6 @@
 .button {
   @include button-reset;
+
   padding: 1.5rem;
 
   font-size: convertPixelsToRem(16);

@@ -1,3 +1,7 @@
+<?php
+  require_once './mock.php'
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +65,23 @@
           <span class="visually-hidden">Skip to content</span>
         </a>
       </div>
+    </section>
+    <section class="home__bestsellers bestsellers">
+      <div class="bestsellers__wrapper">
+        <h2 class="bestsellers__title">Bestsellers</h2>
+        <a class="bestsellers__link link" href="#">View all</a>
+      </div>
+      <ul class="bestsellers__list">
+        <?php foreach ($products as $product) : ?>
+          <li class="bestsellers__item">
+            <a class="bestsellers__card card" href="#">
+              <img class="card__image" src="<?= $product['image_path'] ?>" alt="<?= $product['name'] ?>" width="270" height="349">
+              <h3 class="card__title"><?= $product['name'] ?></h3>
+              <p class="card__price">$ <?= $product['price'] ?></p>
+            </a>
+          </li>
+        <?php endforeach ?>
+      </ul>
     </section>
   </main>
 </body>
