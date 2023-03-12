@@ -138,5 +138,49 @@
       </ul>
     </section>
   </main>
+  <footer class="footer">
+    <p class="footer__logo">Nîmes</p>
+    <nav class="footer__footer-nav footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Shop</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Delivery</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Service</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Sitemap</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--fb" href="#">
+          <span class="visually-hidden">facebook</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--insta" href="#">
+          <span class="visually-hidden">instagram</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--pin" href="#">
+          <span class="visually-hidden">pinterest</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--tw" href="#">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
