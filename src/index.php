@@ -52,7 +52,13 @@
           <a class="promo__collection-link button" href="#">Check new collection</a>
         </div>
         <div class="promo__image-wrapper">
-          <img class="promo__image" src="./assets/images/6bd5cc90818e964627daeb381da06d08.jpeg" width="430" height="517" alt="close">
+          <img
+            class="promo__image"
+            src="./assets/images/6bd5cc90818e964627daeb381da06d08.jpeg"
+            width="430"
+            height="517"
+            alt="close"
+          >
         </div>
         <ul class="promo__social-list social-list">
           <li class="social-list__item">
@@ -76,8 +82,14 @@
         <?php foreach ($products as $product) : ?>
           <li class="bestsellers__item">
             <a class="bestsellers__card card" href="#">
-              <img class="card__image" src="<?= $product['image_path'] ?>" alt="<?= $product['name'] ?>" width="270" height="349">
-              <h3 class="card__title"><?= $product['name'] ?></h3>
+              <img
+                class="card__image"
+                src="<?= $product['image_path'] ?>"
+                alt="<?= $product['name'] ?>"
+                width="270"
+                height="349"
+              >
+              <h3 class="card__title"><?= ucfirst($product['name']) ?></h3>
               <p class="card__price">$ <?= $product['price'] ?></p>
             </a>
           </li>
@@ -102,6 +114,28 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="home__shop-by-category shop-by-category">
+      <div class="shop-by-category__wrapper">
+        <h2 class="shop-by-category__title">Shop by category</h2>
+        <a class="shop-by-category__link link" href="#">View all</a>
+      </div>
+      <ul class="shop-by-category__list">
+        <?php foreach ($categories as $index => $category) : ?>
+          <li class="shop-by-category__item">
+            <a class="shop-by-category__card category-card" href="#">
+              <img
+                class="category-card__image"
+                src="<?= $category['image_path'] ?>"
+                alt="<?= $category['name'] ?>"
+                width="270"
+                height="<?= $index & 1 ? 290 : 349?>"
+              >
+              <h3 class="category-card__title"><?= ucfirst($category['name']) ?></h3>
+            </a>
+          </li>
+        <?php endforeach ?>
+      </ul>
     </section>
   </main>
 </body>
